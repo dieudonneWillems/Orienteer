@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02ED60E41FE1CB5E00384852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED60E31FE1CB5E00384852 /* AppDelegate.swift */; };
+		02ED60E61FE1CB5E00384852 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED60E51FE1CB5E00384852 /* Document.swift */; };
+		02ED60E91FE1CB5E00384852 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02ED60E71FE1CB5E00384852 /* Document.xib */; };
+		02ED60EC1FE1CB5E00384852 /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02ED60EA1FE1CB5E00384852 /* Document.xcdatamodeld */; };
+		02ED60EE1FE1CB5E00384852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02ED60ED1FE1CB5E00384852 /* Assets.xcassets */; };
+		02ED60F11FE1CB5E00384852 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02ED60EF1FE1CB5E00384852 /* MainMenu.xib */; };
+		02ED60FD1FE1CB5E00384852 /* OrienteerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED60FC1FE1CB5E00384852 /* OrienteerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02ED60F91FE1CB5E00384852 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02ED60D81FE1CB5E00384852 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02ED60DF1FE1CB5E00384852;
+			remoteInfo = Orienteer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02ED60E01FE1CB5E00384852 /* Orienteer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orienteer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02ED60E31FE1CB5E00384852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02ED60E51FE1CB5E00384852 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		02ED60E81FE1CB5E00384852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		02ED60EB1FE1CB5E00384852 /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
+		02ED60ED1FE1CB5E00384852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02ED60F01FE1CB5E00384852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		02ED60F21FE1CB5E00384852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02ED60F31FE1CB5E00384852 /* Orienteer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Orienteer.entitlements; sourceTree = "<group>"; };
+		02ED60F81FE1CB5E00384852 /* OrienteerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrienteerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02ED60FC1FE1CB5E00384852 /* OrienteerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrienteerTests.swift; sourceTree = "<group>"; };
+		02ED60FE1FE1CB5E00384852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02ED60DD1FE1CB5E00384852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02ED60F51FE1CB5E00384852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02ED60D71FE1CB5E00384852 = {
+			isa = PBXGroup;
+			children = (
+				02ED60E21FE1CB5E00384852 /* Orienteer */,
+				02ED60FB1FE1CB5E00384852 /* OrienteerTests */,
+				02ED60E11FE1CB5E00384852 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02ED60E11FE1CB5E00384852 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02ED60E01FE1CB5E00384852 /* Orienteer.app */,
+				02ED60F81FE1CB5E00384852 /* OrienteerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02ED60E21FE1CB5E00384852 /* Orienteer */ = {
+			isa = PBXGroup;
+			children = (
+				02ED60E31FE1CB5E00384852 /* AppDelegate.swift */,
+				02ED60E51FE1CB5E00384852 /* Document.swift */,
+				02ED60E71FE1CB5E00384852 /* Document.xib */,
+				02ED60ED1FE1CB5E00384852 /* Assets.xcassets */,
+				02ED60EF1FE1CB5E00384852 /* MainMenu.xib */,
+				02ED60F21FE1CB5E00384852 /* Info.plist */,
+				02ED60F31FE1CB5E00384852 /* Orienteer.entitlements */,
+				02ED60EA1FE1CB5E00384852 /* Document.xcdatamodeld */,
+			);
+			path = Orienteer;
+			sourceTree = "<group>";
+		};
+		02ED60FB1FE1CB5E00384852 /* OrienteerTests */ = {
+			isa = PBXGroup;
+			children = (
+				02ED60FC1FE1CB5E00384852 /* OrienteerTests.swift */,
+				02ED60FE1FE1CB5E00384852 /* Info.plist */,
+			);
+			path = OrienteerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02ED60DF1FE1CB5E00384852 /* Orienteer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02ED61011FE1CB5E00384852 /* Build configuration list for PBXNativeTarget "Orienteer" */;
+			buildPhases = (
+				02ED60DC1FE1CB5E00384852 /* Sources */,
+				02ED60DD1FE1CB5E00384852 /* Frameworks */,
+				02ED60DE1FE1CB5E00384852 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Orienteer;
+			productName = Orienteer;
+			productReference = 02ED60E01FE1CB5E00384852 /* Orienteer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02ED60F71FE1CB5E00384852 /* OrienteerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02ED61041FE1CB5E00384852 /* Build configuration list for PBXNativeTarget "OrienteerTests" */;
+			buildPhases = (
+				02ED60F41FE1CB5E00384852 /* Sources */,
+				02ED60F51FE1CB5E00384852 /* Frameworks */,
+				02ED60F61FE1CB5E00384852 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02ED60FA1FE1CB5E00384852 /* PBXTargetDependency */,
+			);
+			name = OrienteerTests;
+			productName = OrienteerTests;
+			productReference = 02ED60F81FE1CB5E00384852 /* OrienteerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02ED60D81FE1CB5E00384852 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = lapsedpacifist;
+				TargetAttributes = {
+					02ED60DF1FE1CB5E00384852 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					02ED60F71FE1CB5E00384852 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 02ED60DF1FE1CB5E00384852;
+					};
+				};
+			};
+			buildConfigurationList = 02ED60DB1FE1CB5E00384852 /* Build configuration list for PBXProject "Orienteer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02ED60D71FE1CB5E00384852;
+			productRefGroup = 02ED60E11FE1CB5E00384852 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02ED60DF1FE1CB5E00384852 /* Orienteer */,
+				02ED60F71FE1CB5E00384852 /* OrienteerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02ED60DE1FE1CB5E00384852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02ED60EE1FE1CB5E00384852 /* Assets.xcassets in Resources */,
+				02ED60E91FE1CB5E00384852 /* Document.xib in Resources */,
+				02ED60F11FE1CB5E00384852 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02ED60F61FE1CB5E00384852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02ED60DC1FE1CB5E00384852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02ED60EC1FE1CB5E00384852 /* Document.xcdatamodeld in Sources */,
+				02ED60E61FE1CB5E00384852 /* Document.swift in Sources */,
+				02ED60E41FE1CB5E00384852 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02ED60F41FE1CB5E00384852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02ED60FD1FE1CB5E00384852 /* OrienteerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02ED60FA1FE1CB5E00384852 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02ED60DF1FE1CB5E00384852 /* Orienteer */;
+			targetProxy = 02ED60F91FE1CB5E00384852 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02ED60E71FE1CB5E00384852 /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02ED60E81FE1CB5E00384852 /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		02ED60EF1FE1CB5E00384852 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02ED60F01FE1CB5E00384852 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02ED60FF1FE1CB5E00384852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02ED61001FE1CB5E00384852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		02ED61021FE1CB5E00384852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Orienteer/Orienteer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J2S9726G2L;
+				INFOPLIST_FILE = Orienteer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lapsedpacifist.Orienteer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		02ED61031FE1CB5E00384852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Orienteer/Orienteer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J2S9726G2L;
+				INFOPLIST_FILE = Orienteer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lapsedpacifist.Orienteer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		02ED61051FE1CB5E00384852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J2S9726G2L;
+				INFOPLIST_FILE = OrienteerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lapsedpacifist.OrienteerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orienteer.app/Contents/MacOS/Orienteer";
+			};
+			name = Debug;
+		};
+		02ED61061FE1CB5E00384852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J2S9726G2L;
+				INFOPLIST_FILE = OrienteerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lapsedpacifist.OrienteerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orienteer.app/Contents/MacOS/Orienteer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02ED60DB1FE1CB5E00384852 /* Build configuration list for PBXProject "Orienteer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02ED60FF1FE1CB5E00384852 /* Debug */,
+				02ED61001FE1CB5E00384852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02ED61011FE1CB5E00384852 /* Build configuration list for PBXNativeTarget "Orienteer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02ED61021FE1CB5E00384852 /* Debug */,
+				02ED61031FE1CB5E00384852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02ED61041FE1CB5E00384852 /* Build configuration list for PBXNativeTarget "OrienteerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02ED61051FE1CB5E00384852 /* Debug */,
+				02ED61061FE1CB5E00384852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		02ED60EA1FE1CB5E00384852 /* Document.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				02ED60EB1FE1CB5E00384852 /* Document.xcdatamodel */,
+			);
+			currentVersion = 02ED60EB1FE1CB5E00384852 /* Document.xcdatamodel */;
+			path = Document.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 02ED60D81FE1CB5E00384852 /* Project object */;
+}
