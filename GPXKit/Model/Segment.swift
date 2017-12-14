@@ -8,9 +8,12 @@
 
 import Cocoa
 
-public class TrackSegment: NSObject {
+public struct Segment {
     
     public var name : String?
+    
+    // TODO: Add Extensions
+    
     public var time : Date? {
         get {
             if trackPoints.count <= 0 {
@@ -21,14 +24,14 @@ public class TrackSegment: NSObject {
         }
     }
 
-    public var trackPoints : [TrackPoint] {
+    public var trackPoints : [WayPoint] {
         get {
             return _trackPoints
         }
     }
-    private var _trackPoints = [TrackPoint]()
+    private var _trackPoints = [WayPoint]()
     
-    public override init() {
+    public init() {
         self.name = nil
     }
     
@@ -36,31 +39,31 @@ public class TrackSegment: NSObject {
         self.name = name
     }
     
-    public convenience init(withTrackPoints trackPoints: [TrackPoint]) {
+    public init(withWayPoints wayPoints: [WayPoint]) {
         self.init()
-        self.addTrackPoints(trackPoints)
+        self.addTrackPoints(wayPoints)
     }
     
-    public convenience init(withName name: String, andTrackPoints trackPoints: [TrackPoint]) {
+    public init(withName name: String, andWayPoints wayPoints: [WayPoint]) {
         self.init(withName:name)
-        self.addTrackPoints(trackPoints)
+        self.addTrackPoints(wayPoints)
     }
     
-    public func addTrackPoint(_ trackPoint : TrackPoint) {
-        _trackPoints.append(trackPoint)
-        _trackPoints.sort(by: < )
+    public mutating func addTrackPoint(_ wayPoint : WayPoint) {
+        _trackPoints.append(wayPoint)
+        _trackPoints = _trackPoints.sorted(by: <)
     }
     
-    public func addTrackPoints(_ trackPoints : [TrackPoint]) {
-        _trackPoints.append(contentsOf: trackPoints)
-        _trackPoints.sort(by: < )
+    public mutating func addTrackPoints(_ wayPoints : [WayPoint]) {
+        _trackPoints.append(contentsOf: wayPoints)
+        _trackPoints = _trackPoints.sorted(by: <)
     }
 }
 
 
-public extension TrackSegment {
+public extension Segment {
     
-    public static func < (left: TrackSegment, right: TrackSegment) -> Bool {
+    public static func < (left: Segment, right: Segment) -> Bool {
         if left.time != nil && right.time == nil {
             return true
         }
@@ -70,7 +73,7 @@ public extension TrackSegment {
         return left.time! < right.time!
     }
     
-    public static func > (left: TrackSegment, right: TrackSegment) -> Bool {
+    public static func > (left: Segment, right: Segment) -> Bool {
         if left.time == nil && right.time != nil {
             return true
         }

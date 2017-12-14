@@ -8,9 +8,18 @@
 
 import Cocoa
 
-public class Track: NSObject {
+public struct Track {
 
     public var name : String?
+    public var comment : String?
+    public var trackDescription: String?
+    public var source : String?
+    public var links = [Link]()
+    public var trackNumber: Int?
+    public var type : String?
+    
+    // TODO: Add Extensions
+    
     public var time : Date? {
         get {
             if segments.count <= 0 {
@@ -20,61 +29,59 @@ public class Track: NSObject {
             }
         }
     }
-    public var creator : String?
     
-    public var segments : [TrackSegment] {
+    public var segments : [Segment] {
         get {
             return _segments
         }
     }
-    private var _segments = [TrackSegment]()
+    private var _segments = [Segment]()
     
-    public override init() {
+    public init() {
         self.name = nil
-        self.creator = nil
     }
     
     public init(withName name: String) {
         self.name = name
     }
     
-    public convenience init(withSegment segment: TrackSegment){
+    public init(withSegment segment: Segment){
         self.init()
         self.addSegment(segment)
     }
     
-    public convenience init(withName name: String, andSegment segment: TrackSegment){
+    public init(withName name: String, andSegment segment: Segment){
         self.init(withName: name)
         self.addSegment(segment)
     }
     
-    public convenience init(withSegments segments: [TrackSegment]){
+    public init(withSegments segments: [Segment]){
         self.init()
         self.addSegments(segments)
     }
     
-    public convenience init(withName name: String, andSegments segments: [TrackSegment]){
+    public init(withName name: String, andSegments segments: [Segment]){
         self.init(withName: name)
         self.addSegments(segments)
     }
     
-    public convenience init(withTrackPoints trackPoints : [TrackPoint]){
-        let segment = TrackSegment(withTrackPoints: trackPoints)
+    public init(withTrackPoints trackPoints : [WayPoint]){
+        let segment = Segment(withWayPoints: trackPoints)
         self.init(withSegment: segment)
     }
     
-    public convenience init(withName name: String, andTrackPoints trackPoints : [TrackPoint]){
-        let segment = TrackSegment(withTrackPoints: trackPoints)
+    public init(withName name: String, andTrackPoints trackPoints : [WayPoint]){
+        let segment = Segment(withWayPoints: trackPoints)
         self.init(withName: name, andSegment: segment)
     }
     
-    public func addSegment(_ segment : TrackSegment){
+    public mutating func addSegment(_ segment : Segment){
         _segments.append(segment)
-        _segments.sort(by: < )
+        _segments = _segments.sorted(by: <)
     }
     
-    public func addSegments(_ segments : [TrackSegment]) {
+    public mutating func addSegments(_ segments : [Segment]) {
         _segments.append(contentsOf: segments)
-        _segments.sort(by: < )
+        _segments = _segments.sorted(by: <)
     }
 }
