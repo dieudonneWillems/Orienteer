@@ -12,7 +12,12 @@ public struct Segment {
     
     public var name : String?
     
-    // TODO: Add Extensions
+    public var extensions : [Extension] {
+        get {
+            return _extensions
+        }
+    }
+    private var _extensions = [Extension]()
     
     public var time : Date? {
         get {

@@ -19,5 +19,10 @@ public struct Metadata {
     public var keywords: [String]
     public var bounds : Bounds?
     
-    // TODO: Add Extensions
+    public var extensions : [Extension] {
+        get {
+            return _extensions
+        }
+    }
+    private var _extensions = [Extension]()
 }

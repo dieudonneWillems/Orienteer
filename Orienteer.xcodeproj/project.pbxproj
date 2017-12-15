@@ -15,6 +15,10 @@
 		0224F8BF1FE308CC006E8C95 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8BE1FE308CC006E8C95 /* Person.swift */; };
 		0224F8C11FE30A39006E8C95 /* Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8C01FE30A39006E8C95 /* Copyright.swift */; };
 		0224F8C31FE30BF2006E8C95 /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8C21FE30BF2006E8C95 /* Bounds.swift */; };
+		0224F8C51FE31010006E8C95 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8C41FE31010006E8C95 /* Extension.swift */; };
+		0224F8C81FE48578006E8C95 /* GPXParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8C71FE48578006E8C95 /* GPXParser.swift */; };
+		0224F8CA1FE4865A006E8C95 /* GPXParserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8C91FE4865A006E8C95 /* GPXParserDelegate.swift */; };
+		0224F8CC1FE49338006E8C95 /* GPXExtensionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8CB1FE49338006E8C95 /* GPXExtensionParser.swift */; };
 		02ED60E41FE1CB5E00384852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED60E31FE1CB5E00384852 /* AppDelegate.swift */; };
 		02ED60E61FE1CB5E00384852 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED60E51FE1CB5E00384852 /* Document.swift */; };
 		02ED60E91FE1CB5E00384852 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02ED60E71FE1CB5E00384852 /* Document.xib */; };
@@ -87,6 +91,10 @@
 		0224F8BE1FE308CC006E8C95 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		0224F8C01FE30A39006E8C95 /* Copyright.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copyright.swift; sourceTree = "<group>"; };
 		0224F8C21FE30BF2006E8C95 /* Bounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounds.swift; sourceTree = "<group>"; };
+		0224F8C41FE31010006E8C95 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		0224F8C71FE48578006E8C95 /* GPXParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXParser.swift; sourceTree = "<group>"; };
+		0224F8C91FE4865A006E8C95 /* GPXParserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXParserDelegate.swift; sourceTree = "<group>"; };
+		0224F8CB1FE49338006E8C95 /* GPXExtensionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXExtensionParser.swift; sourceTree = "<group>"; };
 		02ED60E01FE1CB5E00384852 /* Orienteer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orienteer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02ED60E31FE1CB5E00384852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02ED60E51FE1CB5E00384852 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
@@ -145,6 +153,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0224F8C61FE484CE006E8C95 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				0224F8C71FE48578006E8C95 /* GPXParser.swift */,
+				0224F8C91FE4865A006E8C95 /* GPXParserDelegate.swift */,
+				0224F8CB1FE49338006E8C95 /* GPXExtensionParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
 		02ED60D71FE1CB5E00384852 = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +214,7 @@
 			children = (
 				02ED610E1FE1CBAE00384852 /* GPXKit.h */,
 				02ED612B1FE1CC3300384852 /* Model */,
+				0224F8C61FE484CE006E8C95 /* Parser */,
 				02ED610F1FE1CBAE00384852 /* Info.plist */,
 			);
 			path = GPXKit;
@@ -225,6 +244,7 @@
 				0224F8BE1FE308CC006E8C95 /* Person.swift */,
 				0224F8C01FE30A39006E8C95 /* Copyright.swift */,
 				0224F8C21FE30BF2006E8C95 /* Bounds.swift */,
+				0224F8C41FE31010006E8C95 /* Extension.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -347,7 +367,7 @@
 					02ED610B1FE1CBAE00384852 = {
 						CreatedOnToolsVersion = 9.0.1;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					02ED61131FE1CBAF00384852 = {
 						CreatedOnToolsVersion = 9.0.1;
@@ -438,10 +458,14 @@
 				0224F8B51FE27CAE006E8C95 /* GPSData.swift in Sources */,
 				02ED61301FE1CEF500384852 /* Track.swift in Sources */,
 				0224F8BD1FE3083A006E8C95 /* Metadata.swift in Sources */,
+				0224F8C51FE31010006E8C95 /* Extension.swift in Sources */,
 				0224F8BF1FE308CC006E8C95 /* Person.swift in Sources */,
 				02ED61321FE1D14500384852 /* Segment.swift in Sources */,
+				0224F8C81FE48578006E8C95 /* GPXParser.swift in Sources */,
+				0224F8CC1FE49338006E8C95 /* GPXExtensionParser.swift in Sources */,
 				0224F8B91FE281EF006E8C95 /* Link.swift in Sources */,
 				0224F8B71FE27E20006E8C95 /* Route.swift in Sources */,
+				0224F8CA1FE4865A006E8C95 /* GPXParserDelegate.swift in Sources */,
 				0224F8C11FE30A39006E8C95 /* Copyright.swift in Sources */,
 				0224F8BB1FE2838F006E8C95 /* FixType.swift in Sources */,
 				0224F8C31FE30BF2006E8C95 /* Bounds.swift in Sources */,
@@ -681,11 +705,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = J2S9726G2L;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -695,6 +719,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lapsedpacifist.GPXKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -708,11 +733,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = J2S9726G2L;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -722,6 +747,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lapsedpacifist.GPXKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
