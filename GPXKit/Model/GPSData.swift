@@ -30,10 +30,5 @@ public struct GPSData {
         self.time = time
         self.creator = nil
     }
-    
-    public init?(contentsOf file: URL) {
-        self.init()
-        
-    }
 
 }

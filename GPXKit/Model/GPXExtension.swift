@@ -8,6 +8,6 @@
 
 import Cocoa
 
-public protocol Extension {
+public protocol GPXExtension {
     
 }

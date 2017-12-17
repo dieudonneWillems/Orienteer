@@ -11,4 +11,6 @@ import Cocoa
 public protocol GPXExtensionParser {
     
     func canParseExtensionElement(withName elementName: String, namespaceURI: String?) -> Bool
+    
+    func GPXExtension(fromElement element: GPXElement) -> GPXExtension?
 }

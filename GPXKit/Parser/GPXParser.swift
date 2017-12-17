@@ -399,9 +399,9 @@ public class GPXParser: NSObject, XMLParserDelegate {
     
     private func bounds(fromElement element: GPXElement) -> Bounds? {
         let minlat = element.attributes["minlat"]
-        let minlon = element.attributes["minlat"]
-        let maxlat = element.attributes["minlat"]
-        let maxlon = element.attributes["minlat"]
+        let minlon = element.attributes["minlon"]
+        let maxlat = element.attributes["maxlat"]
+        let maxlon = element.attributes["maxlon"]
         if minlat != nil && minlon != nil && maxlat != nil && maxlon != nil {
             let minlatitude = Double(minlat!)
             let minlongitude = Double(minlon!)
@@ -415,10 +415,22 @@ public class GPXParser: NSObject, XMLParserDelegate {
         return nil
     }
     
-    private func extensions(fromElement element: GPXElement) -> [Extension] {
-        var extensions = [Extension]()
+    private func extensions(fromElement element: GPXElement) -> [GPXExtension] {
+        var extensions = [GPXExtension]()
         
-        // TODO: parse extensions
+        for child in element.children {
+            if (child as? GPXElement) != nil {
+                let childELement = child as! GPXElement
+                for extensionParser in extensionParsers {
+                    if extensionParser.canParseExtensionElement(withName: childELement.elementName, namespaceURI: childELement.namespaceURI) {
+                        let gpxextension = extensionParser.GPXExtension(fromElement: childELement)
+                        if gpxextension != nil {
+                            extensions.append(gpxextension!)
+                        }
+                    }
+                }
+            }
+        }
         
         return extensions
     }
@@ -465,51 +477,6 @@ public class GPXParser: NSObject, XMLParserDelegate {
     public func parser(_ parser: XMLParser, foundCDATA CDATABlock: Data) {
         currentParentElement?.children.append(CDATABlock)
     }
-}
-
-internal class GPXElement {
-    let elementName : String
-    let namespaceURI : String?
-    let attributes : [String:String]
-    
-    var parent : GPXElement?
-    var children = [Any]()
-    
-    var depth : Int {
-        get {
-            if parent != nil {
-                return parent!.depth - 1
-            }
-            return 0
-        }
-    }
-    
-    var textContent : String? {
-        get {
-            var text = ""
-            for child in children {
-                if (child as? String) != nil {
-                    text.append(child as! String)
-                } else if (child as? GPXElement) != nil {
-                    let tc = (child as! GPXElement).textContent
-                    if tc != nil {
-                        text.append(tc!)
-                    }
-                }
-            }
-            if text.count <= 0 {
-                return nil
-            }
-            return text
-        }
-    }
-    
-    init(elementName: String, namespaceURI: String?, attributes : [String : String]) {
-        self.elementName = elementName
-        self.namespaceURI = namespaceURI
-        self.attributes = attributes
-    }
-
 }
 
 public enum GPXParserError: Error {
