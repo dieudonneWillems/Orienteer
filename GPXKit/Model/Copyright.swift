@@ -10,18 +10,11 @@ import Cocoa
 
 public struct Copyright {
     
-    public var author: String?
+    public let author: String
     public var year: Int?
-    public var license: URL?
+    public var license: String?
     
-    public init(withAuthor author: String, andYear year: Int) {
+    public init(withAuthor author: String) {
         self.author = author
-        self.year = year
-    }
-    
-    public init(withAuthor author: String, year: Int, andLicense license: URL) {
-        self.author = author
-        self.year = year
-        self.license = license
     }
 }

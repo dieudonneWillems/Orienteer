@@ -18,12 +18,7 @@ public struct Track {
     public var trackNumber: Int?
     public var type : String?
     
-    public var extensions : [Extension] {
-        get {
-            return _extensions
-        }
-    }
-    private var _extensions = [Extension]()
+    public var extensions = [Extension]()
     
     public var time : Date? {
         get {

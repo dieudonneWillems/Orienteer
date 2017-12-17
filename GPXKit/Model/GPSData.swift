@@ -14,9 +14,9 @@ public struct GPSData {
     public var time : Date?
     public var metadata : Metadata?
     
-    private var _tracks = [Track]()
-    private var _routes = [Route]()
-    private var _wayPoints = [WayPoint]()
+    public var tracks = [Track]()
+    public var routes = [Route]()
+    public var wayPoints = [WayPoint]()
     
     public var extensions : [Extension] {
         get {

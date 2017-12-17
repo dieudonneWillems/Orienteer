@@ -16,13 +16,11 @@ public struct Metadata {
     public var copyright : Copyright?
     public var links = [Link]()
     public var creationDate : Date?
-    public var keywords: [String]
+    public var keywords = [String]()
     public var bounds : Bounds?
     
-    public var extensions : [Extension] {
-        get {
-            return _extensions
-        }
+    public init(){
     }
-    private var _extensions = [Extension]()
+    
+    public var extensions = [Extension]()
 }

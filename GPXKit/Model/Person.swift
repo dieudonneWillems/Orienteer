@@ -14,6 +14,10 @@ public struct Person {
     public var email: String?
     public var link: Link?
     
+    public init() {
+        
+    }
+    
     public init(withName name: String){
         self.name = name
     }

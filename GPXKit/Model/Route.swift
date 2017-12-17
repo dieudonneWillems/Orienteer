@@ -18,12 +18,7 @@ public struct Route {
     public var routeNumber: Int?
     public var type : String?
     
-    public var extensions : [Extension] {
-        get {
-            return _extensions
-        }
-    }
-    private var _extensions = [Extension]()
+    public var extensions = [Extension]()
     
     public var routePoints : [WayPoint] {
         get {
