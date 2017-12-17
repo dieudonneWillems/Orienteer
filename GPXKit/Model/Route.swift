@@ -15,32 +15,23 @@ public struct Route {
     public var routeDescription: String?
     public var source : String?
     public var links = [Link]()
-    public var routeNumber: Int?
+    public var routeNumber: UInt?
     public var type : String?
     
     public var extensions = [Extension]()
     
-    public var routePoints : [WayPoint] {
-        get {
-            return _routePoints
-        }
+    public var routePoints = [WayPoint]()
+    
+    public init() {
+        
     }
-    private var _routePoints = [WayPoint]()
     
     public init(withName name: String) {
         self.name = name
     }
     
-    public init(withName name: String, andRouteNumber routeNumber: Int) {
+    public init(withName name: String, andRouteNumber routeNumber: UInt) {
         self.name = name
         self.routeNumber = routeNumber
-    }
-    
-    public mutating func addRoutePoint(_ routePoint: WayPoint) {
-        _routePoints.append(routePoint)
-    }
-    
-    public mutating func addRoutePoints(_ routePoints: [WayPoint]) {
-        _routePoints.append(contentsOf: routePoints)
     }
 }

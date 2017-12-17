@@ -18,12 +18,7 @@ public struct GPSData {
     public var routes = [Route]()
     public var wayPoints = [WayPoint]()
     
-    public var extensions : [Extension] {
-        get {
-            return _extensions
-        }
-    }
-    private var _extensions = [Extension]()
+    public var extensions = [Extension]()
     
     public init() {
         self.time = nil

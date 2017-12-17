@@ -41,20 +41,20 @@ public struct Segment {
     
     public init(withWayPoints wayPoints: [WayPoint]) {
         self.init()
-        self.addTrackPoints(wayPoints)
+        self.appendTrackPoint(wayPoints)
     }
     
     public init(withName name: String, andWayPoints wayPoints: [WayPoint]) {
         self.init(withName:name)
-        self.addTrackPoints(wayPoints)
+        self.appendTrackPoint(wayPoints)
     }
     
-    public mutating func addTrackPoint(_ wayPoint : WayPoint) {
+    public mutating func appendTrackPoint(_ wayPoint : WayPoint) {
         _trackPoints.append(wayPoint)
         _trackPoints = _trackPoints.sorted(by: <)
     }
     
-    public mutating func addTrackPoints(_ wayPoints : [WayPoint]) {
+    public mutating func appendTrackPoint(_ wayPoints : [WayPoint]) {
         _trackPoints.append(contentsOf: wayPoints)
         _trackPoints = _trackPoints.sorted(by: <)
     }

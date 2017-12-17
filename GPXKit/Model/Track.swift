@@ -15,7 +15,7 @@ public struct Track {
     public var trackDescription: String?
     public var source : String?
     public var links = [Link]()
-    public var trackNumber: Int?
+    public var trackNumber: UInt?
     public var type : String?
     
     public var extensions = [Extension]()
@@ -47,22 +47,22 @@ public struct Track {
     
     public init(withSegment segment: Segment){
         self.init()
-        self.addSegment(segment)
+        self.appendSegment(segment)
     }
     
     public init(withName name: String, andSegment segment: Segment){
         self.init(withName: name)
-        self.addSegment(segment)
+        self.appendSegment(segment)
     }
     
     public init(withSegments segments: [Segment]){
         self.init()
-        self.addSegments(segments)
+        self.appendSegments(segments)
     }
     
     public init(withName name: String, andSegments segments: [Segment]){
         self.init(withName: name)
-        self.addSegments(segments)
+        self.appendSegments(segments)
     }
     
     public init(withTrackPoints trackPoints : [WayPoint]){
@@ -75,12 +75,12 @@ public struct Track {
         self.init(withName: name, andSegment: segment)
     }
     
-    public mutating func addSegment(_ segment : Segment){
+    public mutating func appendSegment(_ segment : Segment){
         _segments.append(segment)
         _segments = _segments.sorted(by: <)
     }
     
-    public mutating func addSegments(_ segments : [Segment]) {
+    public mutating func appendSegments(_ segments : [Segment]) {
         _segments.append(contentsOf: segments)
         _segments = _segments.sorted(by: <)
     }

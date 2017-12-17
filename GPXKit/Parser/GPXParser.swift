@@ -49,12 +49,24 @@ public class GPXParser: NSObject, XMLParserDelegate {
                     if childELement.elementName == "metadata" && childELement.namespaceURI == GPXNamespace {
                         let metadata = self.metadata(fromElement: childELement)
                         result?.metadata = metadata
-                    }
-                    if childELement.elementName == "wpt" && childELement.namespaceURI == GPXNamespace {
+                    } else if childELement.elementName == "wpt" && childELement.namespaceURI == GPXNamespace {
                         let waypoint = self.waypoint(fromElement: childELement)
                         if waypoint != nil {
                             result?.wayPoints.append(waypoint!)
                         }
+                    } else if childELement.elementName == "rte" && childELement.namespaceURI == GPXNamespace {
+                        let route = self.route(fromElement: childELement)
+                        if route != nil {
+                            result?.routes.append(route!)
+                        }
+                    } else if childELement.elementName == "trk" && childELement.namespaceURI == GPXNamespace {
+                        let track = self.track(fromElement: childELement)
+                        if track != nil {
+                            result?.tracks.append(track!)
+                        }
+                    } else if childELement.elementName == "extensions" && childELement.namespaceURI == GPXNamespace {
+                        let extensions = self.extensions(fromElement: childELement)
+                        result?.extensions = extensions
                     }
                 }
             }
@@ -158,7 +170,7 @@ public class GPXParser: NSObject, XMLParserDelegate {
                             waypoint.symbol = childELement.textContent
                         } else if childELement.elementName == "type" && childELement.namespaceURI == GPXNamespace {
                             waypoint.type = childELement.textContent
-                        } else if childELement.elementName == "link" && childELement.namespaceURI == GPXNamespace {
+                        } else if childELement.elementName == "fix" && childELement.namespaceURI == GPXNamespace {
                             let fixstr = childELement.textContent
                             if fixstr != nil {
                                 if fixstr == "none" {
@@ -220,6 +232,107 @@ public class GPXParser: NSObject, XMLParserDelegate {
         }
         return nil
     }
+    
+    private func route(fromElement element: GPXElement) -> Route? {
+        var route = Route()
+        for child in element.children {
+            if (child as? GPXElement) != nil {
+                let childELement = child as! GPXElement
+                if childELement.elementName == "name" && childELement.namespaceURI == GPXNamespace {
+                    route.name = childELement.textContent
+                } else if childELement.elementName == "cmt" && childELement.namespaceURI == GPXNamespace {
+                    route.comment = childELement.textContent
+                } else if childELement.elementName == "desc" && childELement.namespaceURI == GPXNamespace {
+                    route.routeDescription = childELement.textContent
+                } else if childELement.elementName == "src" && childELement.namespaceURI == GPXNamespace {
+                    route.source = childELement.textContent
+                } else if childELement.elementName == "link" && childELement.namespaceURI == GPXNamespace {
+                    let link = self.link(fromElement: childELement)
+                    if link != nil {
+                        route.links.append(link!)
+                    }
+                } else if childELement.elementName == "number" && childELement.namespaceURI == GPXNamespace {
+                    let numberstr = childELement.textContent
+                    if numberstr != nil {
+                        let number = UInt(numberstr!)
+                        route.routeNumber = number
+                    }
+                } else if childELement.elementName == "type" && childELement.namespaceURI == GPXNamespace {
+                    route.type = childELement.textContent
+                } else if childELement.elementName == "extensions" && childELement.namespaceURI == GPXNamespace {
+                    let extensions = self.extensions(fromElement: childELement)
+                    route.extensions = extensions
+                } else if childELement.elementName == "rtept" && childELement.namespaceURI == GPXNamespace {
+                    let waypoint = self.waypoint(fromElement: childELement)
+                    if waypoint != nil {
+                        route.routePoints.append(waypoint!)
+                    }
+                }
+            }
+        }
+        return route
+    }
+    
+    private func track(fromElement element: GPXElement) -> Track? {
+        var track = Track()
+        for child in element.children {
+            if (child as? GPXElement) != nil {
+                let childELement = child as! GPXElement
+                if childELement.elementName == "name" && childELement.namespaceURI == GPXNamespace {
+                    track.name = childELement.textContent
+                } else if childELement.elementName == "cmt" && childELement.namespaceURI == GPXNamespace {
+                    track.comment = childELement.textContent
+                } else if childELement.elementName == "desc" && childELement.namespaceURI == GPXNamespace {
+                    track.trackDescription = childELement.textContent
+                } else if childELement.elementName == "src" && childELement.namespaceURI == GPXNamespace {
+                    track.source = childELement.textContent
+                } else if childELement.elementName == "link" && childELement.namespaceURI == GPXNamespace {
+                    let link = self.link(fromElement: childELement)
+                    if link != nil {
+                        track.links.append(link!)
+                    }
+                } else if childELement.elementName == "number" && childELement.namespaceURI == GPXNamespace {
+                    let numberstr = childELement.textContent
+                    if numberstr != nil {
+                        let number = UInt(numberstr!)
+                        track.trackNumber = number
+                    }
+                } else if childELement.elementName == "type" && childELement.namespaceURI == GPXNamespace {
+                    track.type = childELement.textContent
+                } else if childELement.elementName == "extensions" && childELement.namespaceURI == GPXNamespace {
+                    let extensions = self.extensions(fromElement: childELement)
+                    track.extensions = extensions
+                } else if childELement.elementName == "trkseg" && childELement.namespaceURI == GPXNamespace {
+                    let segment = self.segment(fromElement: childELement)
+                    if segment != nil {
+                        track.appendSegment(segment!)
+                    }
+                }
+            }
+        }
+        return track
+    }
+    
+    
+    private func segment(fromElement element: GPXElement) -> Segment? {
+        var segment = Segment()
+        for child in element.children {
+            if (child as? GPXElement) != nil {
+                let childELement = child as! GPXElement
+                if childELement.elementName == "extensions" && childELement.namespaceURI == GPXNamespace {
+                    let extensions = self.extensions(fromElement: childELement)
+                    segment.extensions = extensions
+                } else if childELement.elementName == "trkpt" && childELement.namespaceURI == GPXNamespace {
+                    let waypoint = self.waypoint(fromElement: childELement)
+                    if waypoint != nil {
+                        segment.appendTrackPoint(waypoint!)
+                    }
+                }
+            }
+        }
+        return segment
+    }
+    
     
     private func person(fromElement element: GPXElement) -> Person? {
         var person = Person()
