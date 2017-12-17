@@ -26,6 +26,7 @@ class GPXKitTests: XCTestCase {
         let testURL = myBundle.url(forResource: "Orienteringsloop_Amerongse_Berg_9km", withExtension: "gpx")
         if testURL != nil {
             let parser = GPXParser(contentsOf: testURL!)
+            parser?.extensionParsers.append(GarminTrackPointExtensionParser())
             if parser != nil {
                 parser!.parse()
             } else {

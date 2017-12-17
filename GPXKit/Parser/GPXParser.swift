@@ -415,7 +415,7 @@ public class GPXParser: NSObject, XMLParserDelegate {
         return nil
     }
     
-    private func extensions(fromElement element: GPXElement) -> [GPXExtension] {
+    public func extensions(fromElement element: GPXElement) -> [GPXExtension] {
         var extensions = [GPXExtension]()
         
         for child in element.children {
@@ -423,7 +423,7 @@ public class GPXParser: NSObject, XMLParserDelegate {
                 let childELement = child as! GPXElement
                 for extensionParser in extensionParsers {
                     if extensionParser.canParseExtensionElement(withName: childELement.elementName, namespaceURI: childELement.namespaceURI) {
-                        let gpxextension = extensionParser.GPXExtension(fromElement: childELement)
+                        let gpxextension = extensionParser.GPXExtension(fromElement: childELement, fromParser: self)
                         if gpxextension != nil {
                             extensions.append(gpxextension!)
                         }

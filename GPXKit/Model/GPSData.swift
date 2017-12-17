@@ -18,7 +18,7 @@ public struct GPSData {
     public var routes = [Route]()
     public var wayPoints = [WayPoint]()
     
-    public var extensions = [Extension]()
+    public var extensions = [GPXExtension]()
     
     public init() {
         self.time = nil

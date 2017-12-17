@@ -12,7 +12,7 @@ public struct Segment {
     
     public var name : String?
     
-    public var extensions = [Extension]()
+    public var extensions = [GPXExtension]()
     
     public var time : Date? {
         get {

@@ -18,7 +18,7 @@ public struct Track {
     public var trackNumber: UInt?
     public var type : String?
     
-    public var extensions = [Extension]()
+    public var extensions = [GPXExtension]()
     
     public var time : Date? {
         get {

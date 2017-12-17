@@ -33,7 +33,7 @@ public struct WayPoint {
     public var numberOfSecondsSinceLastDGPSUpdate : Double?
     public var DGPSStationID : UInt?
     
-    public var extensions = [Extension]()
+    public var extensions = [GPXExtension]()
     
     public init(withLongitude longitude: Double, andLatitude latitude : Double) {
         self.longitude = longitude

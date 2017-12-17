@@ -20,6 +20,8 @@
 		0224F8CA1FE4865A006E8C95 /* GPXParserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8C91FE4865A006E8C95 /* GPXParserDelegate.swift */; };
 		0224F8CC1FE49338006E8C95 /* GPXExtensionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8CB1FE49338006E8C95 /* GPXExtensionParser.swift */; };
 		02E6137E1FE6FA210030F485 /* GPXElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E6137D1FE6FA210030F485 /* GPXElement.swift */; };
+		02E613811FE6FCB60030F485 /* GarminTrackPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613801FE6FCB60030F485 /* GarminTrackPointExtension.swift */; };
+		02E613831FE6FCFD0030F485 /* GarminTrackPointExtensionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613821FE6FCFD0030F485 /* GarminTrackPointExtensionParser.swift */; };
 		02ED60E41FE1CB5E00384852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED60E31FE1CB5E00384852 /* AppDelegate.swift */; };
 		02ED60E61FE1CB5E00384852 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED60E51FE1CB5E00384852 /* Document.swift */; };
 		02ED60E91FE1CB5E00384852 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02ED60E71FE1CB5E00384852 /* Document.xib */; };
@@ -97,6 +99,8 @@
 		0224F8C91FE4865A006E8C95 /* GPXParserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXParserDelegate.swift; sourceTree = "<group>"; };
 		0224F8CB1FE49338006E8C95 /* GPXExtensionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXExtensionParser.swift; sourceTree = "<group>"; };
 		02E6137D1FE6FA210030F485 /* GPXElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXElement.swift; sourceTree = "<group>"; };
+		02E613801FE6FCB60030F485 /* GarminTrackPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarminTrackPointExtension.swift; sourceTree = "<group>"; };
+		02E613821FE6FCFD0030F485 /* GarminTrackPointExtensionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarminTrackPointExtensionParser.swift; sourceTree = "<group>"; };
 		02ED60E01FE1CB5E00384852 /* Orienteer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orienteer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02ED60E31FE1CB5E00384852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02ED60E51FE1CB5E00384852 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
@@ -166,6 +170,15 @@
 			path = Parser;
 			sourceTree = "<group>";
 		};
+		02E6137F1FE6FC6B0030F485 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				02E613801FE6FCB60030F485 /* GarminTrackPointExtension.swift */,
+				02E613821FE6FCFD0030F485 /* GarminTrackPointExtensionParser.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		02ED60D71FE1CB5E00384852 = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +231,7 @@
 				02ED610E1FE1CBAE00384852 /* GPXKit.h */,
 				02ED612B1FE1CC3300384852 /* Model */,
 				0224F8C61FE484CE006E8C95 /* Parser */,
+				02E6137F1FE6FC6B0030F485 /* Extensions */,
 				02ED610F1FE1CBAE00384852 /* Info.plist */,
 			);
 			path = GPXKit;
@@ -459,12 +473,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0224F8B51FE27CAE006E8C95 /* GPSData.swift in Sources */,
+				02E613831FE6FCFD0030F485 /* GarminTrackPointExtensionParser.swift in Sources */,
 				02ED61301FE1CEF500384852 /* Track.swift in Sources */,
 				0224F8BD1FE3083A006E8C95 /* Metadata.swift in Sources */,
 				0224F8C51FE31010006E8C95 /* GPXExtension.swift in Sources */,
 				02E6137E1FE6FA210030F485 /* GPXElement.swift in Sources */,
 				0224F8BF1FE308CC006E8C95 /* Person.swift in Sources */,
 				02ED61321FE1D14500384852 /* Segment.swift in Sources */,
+				02E613811FE6FCB60030F485 /* GarminTrackPointExtension.swift in Sources */,
 				0224F8C81FE48578006E8C95 /* GPXParser.swift in Sources */,
 				0224F8CC1FE49338006E8C95 /* GPXExtensionParser.swift in Sources */,
 				0224F8B91FE281EF006E8C95 /* Link.swift in Sources */,

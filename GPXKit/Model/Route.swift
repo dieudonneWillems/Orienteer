@@ -18,7 +18,7 @@ public struct Route {
     public var routeNumber: UInt?
     public var type : String?
     
-    public var extensions = [Extension]()
+    public var extensions = [GPXExtension]()
     
     public var routePoints = [WayPoint]()
     

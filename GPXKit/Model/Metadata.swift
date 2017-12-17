@@ -22,5 +22,5 @@ public struct Metadata {
     public init(){
     }
     
-    public var extensions = [Extension]()
+    public var extensions = [GPXExtension]()
 }
