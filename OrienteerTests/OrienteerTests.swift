@@ -2,8 +2,8 @@
 //  OrienteerTests.swift
 //  OrienteerTests
 //
-//  Created by Don Willems on 13/12/2017.
-//  Copyright © 2017 lapsedpacifist. All rights reserved.
+//  Created by Don Willems on 03/01/2018.
+//  Copyright © 2018 lapsedpacifist. All rights reserved.
 //
 
 import XCTest

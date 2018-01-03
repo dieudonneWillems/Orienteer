@@ -7,78 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0224F8B51FE27CAE006E8C95 /* GPSData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8B41FE27CAE006E8C95 /* GPSData.swift */; };
-		0224F8B71FE27E20006E8C95 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8B61FE27E20006E8C95 /* Route.swift */; };
-		0224F8B91FE281EF006E8C95 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8B81FE281EF006E8C95 /* Link.swift */; };
-		0224F8BB1FE2838F006E8C95 /* FixType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8BA1FE2838F006E8C95 /* FixType.swift */; };
-		0224F8BD1FE3083A006E8C95 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8BC1FE3083A006E8C95 /* Metadata.swift */; };
-		0224F8BF1FE308CC006E8C95 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8BE1FE308CC006E8C95 /* Person.swift */; };
-		0224F8C11FE30A39006E8C95 /* Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8C01FE30A39006E8C95 /* Copyright.swift */; };
-		0224F8C31FE30BF2006E8C95 /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8C21FE30BF2006E8C95 /* Bounds.swift */; };
-		0224F8C51FE31010006E8C95 /* GPXExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8C41FE31010006E8C95 /* GPXExtension.swift */; };
-		0224F8C81FE48578006E8C95 /* GPXParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8C71FE48578006E8C95 /* GPXParser.swift */; };
-		0224F8CA1FE4865A006E8C95 /* GPXParserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8C91FE4865A006E8C95 /* GPXParserDelegate.swift */; };
-		0224F8CC1FE49338006E8C95 /* GPXExtensionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224F8CB1FE49338006E8C95 /* GPXExtensionParser.swift */; };
-		02E6137E1FE6FA210030F485 /* GPXElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E6137D1FE6FA210030F485 /* GPXElement.swift */; };
-		02E613811FE6FCB60030F485 /* GarminTrackPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613801FE6FCB60030F485 /* GarminTrackPointExtension.swift */; };
-		02E613831FE6FCFD0030F485 /* GarminTrackPointExtensionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613821FE6FCFD0030F485 /* GarminTrackPointExtensionParser.swift */; };
-		02ED60E41FE1CB5E00384852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED60E31FE1CB5E00384852 /* AppDelegate.swift */; };
-		02ED60E61FE1CB5E00384852 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED60E51FE1CB5E00384852 /* Document.swift */; };
-		02ED60E91FE1CB5E00384852 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02ED60E71FE1CB5E00384852 /* Document.xib */; };
-		02ED60EC1FE1CB5E00384852 /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02ED60EA1FE1CB5E00384852 /* Document.xcdatamodeld */; };
-		02ED60EE1FE1CB5E00384852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02ED60ED1FE1CB5E00384852 /* Assets.xcassets */; };
-		02ED60F11FE1CB5E00384852 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02ED60EF1FE1CB5E00384852 /* MainMenu.xib */; };
-		02ED60FD1FE1CB5E00384852 /* OrienteerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED60FC1FE1CB5E00384852 /* OrienteerTests.swift */; };
-		02ED61151FE1CBAF00384852 /* GPXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02ED610C1FE1CBAE00384852 /* GPXKit.framework */; };
-		02ED611C1FE1CBAF00384852 /* GPXKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED611B1FE1CBAF00384852 /* GPXKitTests.swift */; };
-		02ED611E1FE1CBAF00384852 /* GPXKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 02ED610E1FE1CBAE00384852 /* GPXKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		02ED61211FE1CBAF00384852 /* GPXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02ED610C1FE1CBAE00384852 /* GPXKit.framework */; };
-		02ED61221FE1CBAF00384852 /* GPXKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02ED610C1FE1CBAE00384852 /* GPXKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		02ED612D1FE1CE9C00384852 /* Orienteringsloop_Amerongse_Berg_9km.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 02ED612C1FE1CE9C00384852 /* Orienteringsloop_Amerongse_Berg_9km.gpx */; };
-		02ED61301FE1CEF500384852 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED612F1FE1CEF500384852 /* Track.swift */; };
-		02ED61321FE1D14500384852 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED61311FE1D14500384852 /* Segment.swift */; };
-		02ED61341FE1D1BB00384852 /* WayPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED61331FE1D1BB00384852 /* WayPoint.swift */; };
+		02E613911FFD7D790030F485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613901FFD7D790030F485 /* AppDelegate.swift */; };
+		02E613931FFD7D790030F485 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613921FFD7D790030F485 /* Document.swift */; };
+		02E613981FFD7D790030F485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E613971FFD7D790030F485 /* Assets.xcassets */; };
+		02E613A71FFD7D7A0030F485 /* OrienteerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613A61FFD7D7A0030F485 /* OrienteerTests.swift */; };
+		02E613B21FFD7D7A0030F485 /* OrienteerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613B11FFD7D7A0030F485 /* OrienteerUITests.swift */; };
+		02E613CD1FFD7EF70030F485 /* GPXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E613C41FFD7EF60030F485 /* GPXKit.framework */; };
+		02E613D61FFD7EF70030F485 /* GPXKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E613C61FFD7EF60030F485 /* GPXKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02E613D91FFD7EF70030F485 /* GPXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E613C41FFD7EF60030F485 /* GPXKit.framework */; };
+		02E613DA1FFD7EF70030F485 /* GPXKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02E613C41FFD7EF60030F485 /* GPXKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		02E613F71FFD7F860030F485 /* GPXParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613E31FFD7F860030F485 /* GPXParser.swift */; };
+		02E613F81FFD7F860030F485 /* GPXParserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613E41FFD7F860030F485 /* GPXParserDelegate.swift */; };
+		02E613F91FFD7F860030F485 /* GPXExtensionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613E51FFD7F860030F485 /* GPXExtensionParser.swift */; };
+		02E613FA1FFD7F860030F485 /* GPXElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613E61FFD7F860030F485 /* GPXElement.swift */; };
+		02E613FB1FFD7F860030F485 /* GarminTrackPointExtensionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613E81FFD7F860030F485 /* GarminTrackPointExtensionParser.swift */; };
+		02E613FC1FFD7F860030F485 /* GarminTrackPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613E91FFD7F860030F485 /* GarminTrackPointExtension.swift */; };
+		02E613FD1FFD7F860030F485 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613EB1FFD7F860030F485 /* Metadata.swift */; };
+		02E613FE1FFD7F860030F485 /* FixType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613EC1FFD7F860030F485 /* FixType.swift */; };
+		02E613FF1FFD7F860030F485 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613ED1FFD7F860030F485 /* Track.swift */; };
+		02E614001FFD7F860030F485 /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613EE1FFD7F860030F485 /* Bounds.swift */; };
+		02E614011FFD7F860030F485 /* WayPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613EF1FFD7F860030F485 /* WayPoint.swift */; };
+		02E614021FFD7F860030F485 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613F01FFD7F860030F485 /* Person.swift */; };
+		02E614031FFD7F860030F485 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613F11FFD7F860030F485 /* Link.swift */; };
+		02E614041FFD7F860030F485 /* Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613F21FFD7F860030F485 /* Copyright.swift */; };
+		02E614051FFD7F860030F485 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613F31FFD7F860030F485 /* Segment.swift */; };
+		02E614061FFD7F860030F485 /* GPSData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613F41FFD7F860030F485 /* GPSData.swift */; };
+		02E614071FFD7F860030F485 /* GPXExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613F51FFD7F860030F485 /* GPXExtension.swift */; };
+		02E614081FFD7F860030F485 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E613F61FFD7F860030F485 /* Route.swift */; };
+		02E6140B1FFD7FB00030F485 /* GPXKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E6140A1FFD7FB00030F485 /* GPXKitTests.swift */; };
+		02E6140E1FFD7FBC0030F485 /* Orienteringsloop_Amerongse_Berg_9km.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 02E6140D1FFD7FBC0030F485 /* Orienteringsloop_Amerongse_Berg_9km.gpx */; };
+		02E614111FFD81580030F485 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02E614101FFD81570030F485 /* Document.xib */; };
+		02E614131FFD819B0030F485 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02E614121FFD819B0030F485 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		02ED60F91FE1CB5E00384852 /* PBXContainerItemProxy */ = {
+		02E613A31FFD7D7A0030F485 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 02ED60D81FE1CB5E00384852 /* Project object */;
+			containerPortal = 02E613851FFD7D790030F485 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 02ED60DF1FE1CB5E00384852;
+			remoteGlobalIDString = 02E6138C1FFD7D790030F485;
 			remoteInfo = Orienteer;
 		};
-		02ED61161FE1CBAF00384852 /* PBXContainerItemProxy */ = {
+		02E613AE1FFD7D7A0030F485 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 02ED60D81FE1CB5E00384852 /* Project object */;
+			containerPortal = 02E613851FFD7D790030F485 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 02ED610B1FE1CBAE00384852;
+			remoteGlobalIDString = 02E6138C1FFD7D790030F485;
+			remoteInfo = Orienteer;
+		};
+		02E613CE1FFD7EF70030F485 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02E613851FFD7D790030F485 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02E613C31FFD7EF60030F485;
 			remoteInfo = GPXKit;
 		};
-		02ED61181FE1CBAF00384852 /* PBXContainerItemProxy */ = {
+		02E613D01FFD7EF70030F485 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 02ED60D81FE1CB5E00384852 /* Project object */;
+			containerPortal = 02E613851FFD7D790030F485 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 02ED60DF1FE1CB5E00384852;
+			remoteGlobalIDString = 02E6138C1FFD7D790030F485;
 			remoteInfo = Orienteer;
 		};
-		02ED611F1FE1CBAF00384852 /* PBXContainerItemProxy */ = {
+		02E613D71FFD7EF70030F485 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 02ED60D81FE1CB5E00384852 /* Project object */;
+			containerPortal = 02E613851FFD7D790030F485 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 02ED610B1FE1CBAE00384852;
+			remoteGlobalIDString = 02E613C31FFD7EF60030F485;
 			remoteInfo = GPXKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		02ED61261FE1CBAF00384852 /* Embed Frameworks */ = {
+		02E613E01FFD7EF70030F485 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				02ED61221FE1CBAF00384852 /* GPXKit.framework in Embed Frameworks */,
+				02E613DA1FFD7EF70030F485 /* GPXKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,190 +93,211 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0224F8B41FE27CAE006E8C95 /* GPSData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSData.swift; sourceTree = "<group>"; };
-		0224F8B61FE27E20006E8C95 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
-		0224F8B81FE281EF006E8C95 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
-		0224F8BA1FE2838F006E8C95 /* FixType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixType.swift; sourceTree = "<group>"; };
-		0224F8BC1FE3083A006E8C95 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
-		0224F8BE1FE308CC006E8C95 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		0224F8C01FE30A39006E8C95 /* Copyright.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copyright.swift; sourceTree = "<group>"; };
-		0224F8C21FE30BF2006E8C95 /* Bounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounds.swift; sourceTree = "<group>"; };
-		0224F8C41FE31010006E8C95 /* GPXExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXExtension.swift; sourceTree = "<group>"; };
-		0224F8C71FE48578006E8C95 /* GPXParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXParser.swift; sourceTree = "<group>"; };
-		0224F8C91FE4865A006E8C95 /* GPXParserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXParserDelegate.swift; sourceTree = "<group>"; };
-		0224F8CB1FE49338006E8C95 /* GPXExtensionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXExtensionParser.swift; sourceTree = "<group>"; };
-		02E6137D1FE6FA210030F485 /* GPXElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXElement.swift; sourceTree = "<group>"; };
-		02E613801FE6FCB60030F485 /* GarminTrackPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarminTrackPointExtension.swift; sourceTree = "<group>"; };
-		02E613821FE6FCFD0030F485 /* GarminTrackPointExtensionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarminTrackPointExtensionParser.swift; sourceTree = "<group>"; };
-		02ED60E01FE1CB5E00384852 /* Orienteer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orienteer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		02ED60E31FE1CB5E00384852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02ED60E51FE1CB5E00384852 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
-		02ED60E81FE1CB5E00384852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
-		02ED60EB1FE1CB5E00384852 /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
-		02ED60ED1FE1CB5E00384852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		02ED60F01FE1CB5E00384852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		02ED60F21FE1CB5E00384852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02ED60F31FE1CB5E00384852 /* Orienteer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Orienteer.entitlements; sourceTree = "<group>"; };
-		02ED60F81FE1CB5E00384852 /* OrienteerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrienteerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		02ED60FC1FE1CB5E00384852 /* OrienteerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrienteerTests.swift; sourceTree = "<group>"; };
-		02ED60FE1FE1CB5E00384852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02ED610C1FE1CBAE00384852 /* GPXKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPXKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		02ED610E1FE1CBAE00384852 /* GPXKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPXKit.h; sourceTree = "<group>"; };
-		02ED610F1FE1CBAE00384852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02ED61141FE1CBAF00384852 /* GPXKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPXKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		02ED611B1FE1CBAF00384852 /* GPXKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXKitTests.swift; sourceTree = "<group>"; };
-		02ED611D1FE1CBAF00384852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02ED612C1FE1CE9C00384852 /* Orienteringsloop_Amerongse_Berg_9km.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Orienteringsloop_Amerongse_Berg_9km.gpx; sourceTree = "<group>"; };
-		02ED612F1FE1CEF500384852 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
-		02ED61311FE1D14500384852 /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
-		02ED61331FE1D1BB00384852 /* WayPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayPoint.swift; sourceTree = "<group>"; };
+		02E6138D1FFD7D790030F485 /* Orienteer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orienteer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E613901FFD7D790030F485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02E613921FFD7D790030F485 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		02E613971FFD7D790030F485 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02E6139C1FFD7D7A0030F485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E6139D1FFD7D7A0030F485 /* Orienteer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Orienteer.entitlements; sourceTree = "<group>"; };
+		02E613A21FFD7D7A0030F485 /* OrienteerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrienteerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E613A61FFD7D7A0030F485 /* OrienteerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrienteerTests.swift; sourceTree = "<group>"; };
+		02E613A81FFD7D7A0030F485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E613AD1FFD7D7A0030F485 /* OrienteerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrienteerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E613B11FFD7D7A0030F485 /* OrienteerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrienteerUITests.swift; sourceTree = "<group>"; };
+		02E613B31FFD7D7A0030F485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E613C41FFD7EF60030F485 /* GPXKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPXKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E613C61FFD7EF60030F485 /* GPXKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPXKit.h; sourceTree = "<group>"; };
+		02E613C71FFD7EF60030F485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E613CC1FFD7EF60030F485 /* GPXKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPXKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E613D51FFD7EF70030F485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E613E31FFD7F860030F485 /* GPXParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXParser.swift; sourceTree = "<group>"; };
+		02E613E41FFD7F860030F485 /* GPXParserDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXParserDelegate.swift; sourceTree = "<group>"; };
+		02E613E51FFD7F860030F485 /* GPXExtensionParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXExtensionParser.swift; sourceTree = "<group>"; };
+		02E613E61FFD7F860030F485 /* GPXElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXElement.swift; sourceTree = "<group>"; };
+		02E613E81FFD7F860030F485 /* GarminTrackPointExtensionParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GarminTrackPointExtensionParser.swift; sourceTree = "<group>"; };
+		02E613E91FFD7F860030F485 /* GarminTrackPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GarminTrackPointExtension.swift; sourceTree = "<group>"; };
+		02E613EB1FFD7F860030F485 /* Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
+		02E613EC1FFD7F860030F485 /* FixType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixType.swift; sourceTree = "<group>"; };
+		02E613ED1FFD7F860030F485 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		02E613EE1FFD7F860030F485 /* Bounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bounds.swift; sourceTree = "<group>"; };
+		02E613EF1FFD7F860030F485 /* WayPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WayPoint.swift; sourceTree = "<group>"; };
+		02E613F01FFD7F860030F485 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		02E613F11FFD7F860030F485 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		02E613F21FFD7F860030F485 /* Copyright.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Copyright.swift; sourceTree = "<group>"; };
+		02E613F31FFD7F860030F485 /* Segment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		02E613F41FFD7F860030F485 /* GPSData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSData.swift; sourceTree = "<group>"; };
+		02E613F51FFD7F860030F485 /* GPXExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXExtension.swift; sourceTree = "<group>"; };
+		02E613F61FFD7F860030F485 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		02E614091FFD7FB00030F485 /* GPXKitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPXKitTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		02E6140A1FFD7FB00030F485 /* GPXKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXKitTests.swift; sourceTree = "<group>"; };
+		02E6140D1FFD7FBC0030F485 /* Orienteringsloop_Amerongse_Berg_9km.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Orienteringsloop_Amerongse_Berg_9km.gpx; sourceTree = "<group>"; };
+		02E614101FFD81570030F485 /* Document.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Document.xib; sourceTree = "<group>"; };
+		02E614121FFD819B0030F485 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02ED60DD1FE1CB5E00384852 /* Frameworks */ = {
+		02E6138A1FFD7D790030F485 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02ED61211FE1CBAF00384852 /* GPXKit.framework in Frameworks */,
+				02E613D91FFD7EF70030F485 /* GPXKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02ED60F51FE1CB5E00384852 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		02ED61081FE1CBAE00384852 /* Frameworks */ = {
+		02E6139F1FFD7D7A0030F485 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02ED61111FE1CBAF00384852 /* Frameworks */ = {
+		02E613AA1FFD7D7A0030F485 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02ED61151FE1CBAF00384852 /* GPXKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E613C01FFD7EF60030F485 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E613C91FFD7EF60030F485 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E613CD1FFD7EF70030F485 /* GPXKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0224F8C61FE484CE006E8C95 /* Parser */ = {
+		02E613841FFD7D790030F485 = {
 			isa = PBXGroup;
 			children = (
-				0224F8C71FE48578006E8C95 /* GPXParser.swift */,
-				0224F8C91FE4865A006E8C95 /* GPXParserDelegate.swift */,
-				0224F8CB1FE49338006E8C95 /* GPXExtensionParser.swift */,
-				02E6137D1FE6FA210030F485 /* GPXElement.swift */,
-			);
-			path = Parser;
-			sourceTree = "<group>";
-		};
-		02E6137F1FE6FC6B0030F485 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				02E613801FE6FCB60030F485 /* GarminTrackPointExtension.swift */,
-				02E613821FE6FCFD0030F485 /* GarminTrackPointExtensionParser.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		02ED60D71FE1CB5E00384852 = {
-			isa = PBXGroup;
-			children = (
-				02ED60E21FE1CB5E00384852 /* Orienteer */,
-				02ED60FB1FE1CB5E00384852 /* OrienteerTests */,
-				02ED610D1FE1CBAE00384852 /* GPXKit */,
-				02ED611A1FE1CBAF00384852 /* GPXKitTests */,
-				02ED60E11FE1CB5E00384852 /* Products */,
+				02E6138F1FFD7D790030F485 /* Orienteer */,
+				02E613A51FFD7D7A0030F485 /* OrienteerTests */,
+				02E613B01FFD7D7A0030F485 /* OrienteerUITests */,
+				02E613C51FFD7EF60030F485 /* GPXKit */,
+				02E613D21FFD7EF70030F485 /* GPXKitTests */,
+				02E6138E1FFD7D790030F485 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		02ED60E11FE1CB5E00384852 /* Products */ = {
+		02E6138E1FFD7D790030F485 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02ED60E01FE1CB5E00384852 /* Orienteer.app */,
-				02ED60F81FE1CB5E00384852 /* OrienteerTests.xctest */,
-				02ED610C1FE1CBAE00384852 /* GPXKit.framework */,
-				02ED61141FE1CBAF00384852 /* GPXKitTests.xctest */,
+				02E6138D1FFD7D790030F485 /* Orienteer.app */,
+				02E613A21FFD7D7A0030F485 /* OrienteerTests.xctest */,
+				02E613AD1FFD7D7A0030F485 /* OrienteerUITests.xctest */,
+				02E613C41FFD7EF60030F485 /* GPXKit.framework */,
+				02E613CC1FFD7EF60030F485 /* GPXKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		02ED60E21FE1CB5E00384852 /* Orienteer */ = {
+		02E6138F1FFD7D790030F485 /* Orienteer */ = {
 			isa = PBXGroup;
 			children = (
-				02ED60E31FE1CB5E00384852 /* AppDelegate.swift */,
-				02ED60E51FE1CB5E00384852 /* Document.swift */,
-				02ED60E71FE1CB5E00384852 /* Document.xib */,
-				02ED60ED1FE1CB5E00384852 /* Assets.xcassets */,
-				02ED60EF1FE1CB5E00384852 /* MainMenu.xib */,
-				02ED60F21FE1CB5E00384852 /* Info.plist */,
-				02ED60F31FE1CB5E00384852 /* Orienteer.entitlements */,
-				02ED60EA1FE1CB5E00384852 /* Document.xcdatamodeld */,
+				02E613901FFD7D790030F485 /* AppDelegate.swift */,
+				02E613921FFD7D790030F485 /* Document.swift */,
+				02E614101FFD81570030F485 /* Document.xib */,
+				02E614121FFD819B0030F485 /* MainMenu.xib */,
+				02E613971FFD7D790030F485 /* Assets.xcassets */,
+				02E6139C1FFD7D7A0030F485 /* Info.plist */,
+				02E6139D1FFD7D7A0030F485 /* Orienteer.entitlements */,
 			);
 			path = Orienteer;
 			sourceTree = "<group>";
 		};
-		02ED60FB1FE1CB5E00384852 /* OrienteerTests */ = {
+		02E613A51FFD7D7A0030F485 /* OrienteerTests */ = {
 			isa = PBXGroup;
 			children = (
-				02ED60FC1FE1CB5E00384852 /* OrienteerTests.swift */,
-				02ED60FE1FE1CB5E00384852 /* Info.plist */,
+				02E613A61FFD7D7A0030F485 /* OrienteerTests.swift */,
+				02E613A81FFD7D7A0030F485 /* Info.plist */,
 			);
 			path = OrienteerTests;
 			sourceTree = "<group>";
 		};
-		02ED610D1FE1CBAE00384852 /* GPXKit */ = {
+		02E613B01FFD7D7A0030F485 /* OrienteerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				02ED610E1FE1CBAE00384852 /* GPXKit.h */,
-				02ED612B1FE1CC3300384852 /* Model */,
-				0224F8C61FE484CE006E8C95 /* Parser */,
-				02E6137F1FE6FC6B0030F485 /* Extensions */,
-				02ED610F1FE1CBAE00384852 /* Info.plist */,
+				02E613B11FFD7D7A0030F485 /* OrienteerUITests.swift */,
+				02E613B31FFD7D7A0030F485 /* Info.plist */,
+			);
+			path = OrienteerUITests;
+			sourceTree = "<group>";
+		};
+		02E613C51FFD7EF60030F485 /* GPXKit */ = {
+			isa = PBXGroup;
+			children = (
+				02E613C61FFD7EF60030F485 /* GPXKit.h */,
+				02E613E71FFD7F860030F485 /* Extensions */,
+				02E613EA1FFD7F860030F485 /* Model */,
+				02E613E21FFD7F860030F485 /* Parser */,
+				02E613C71FFD7EF60030F485 /* Info.plist */,
 			);
 			path = GPXKit;
 			sourceTree = "<group>";
 		};
-		02ED611A1FE1CBAF00384852 /* GPXKitTests */ = {
+		02E613D21FFD7EF70030F485 /* GPXKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				02ED611B1FE1CBAF00384852 /* GPXKitTests.swift */,
-				02ED611D1FE1CBAF00384852 /* Info.plist */,
-				02ED612E1FE1CEA500384852 /* Test Files */,
+				02E6140A1FFD7FB00030F485 /* GPXKitTests.swift */,
+				02E6140C1FFD7FBC0030F485 /* Test Files */,
+				02E613D51FFD7EF70030F485 /* Info.plist */,
+				02E614091FFD7FB00030F485 /* GPXKitTests-Bridging-Header.h */,
 			);
 			path = GPXKitTests;
 			sourceTree = "<group>";
 		};
-		02ED612B1FE1CC3300384852 /* Model */ = {
+		02E613E21FFD7F860030F485 /* Parser */ = {
 			isa = PBXGroup;
 			children = (
-				0224F8B41FE27CAE006E8C95 /* GPSData.swift */,
-				02ED61331FE1D1BB00384852 /* WayPoint.swift */,
-				02ED612F1FE1CEF500384852 /* Track.swift */,
-				0224F8B61FE27E20006E8C95 /* Route.swift */,
-				02ED61311FE1D14500384852 /* Segment.swift */,
-				0224F8B81FE281EF006E8C95 /* Link.swift */,
-				0224F8BA1FE2838F006E8C95 /* FixType.swift */,
-				0224F8BC1FE3083A006E8C95 /* Metadata.swift */,
-				0224F8BE1FE308CC006E8C95 /* Person.swift */,
-				0224F8C01FE30A39006E8C95 /* Copyright.swift */,
-				0224F8C21FE30BF2006E8C95 /* Bounds.swift */,
-				0224F8C41FE31010006E8C95 /* GPXExtension.swift */,
+				02E613E31FFD7F860030F485 /* GPXParser.swift */,
+				02E613E41FFD7F860030F485 /* GPXParserDelegate.swift */,
+				02E613E51FFD7F860030F485 /* GPXExtensionParser.swift */,
+				02E613E61FFD7F860030F485 /* GPXElement.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		02E613E71FFD7F860030F485 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				02E613E81FFD7F860030F485 /* GarminTrackPointExtensionParser.swift */,
+				02E613E91FFD7F860030F485 /* GarminTrackPointExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		02E613EA1FFD7F860030F485 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02E613EB1FFD7F860030F485 /* Metadata.swift */,
+				02E613EC1FFD7F860030F485 /* FixType.swift */,
+				02E613ED1FFD7F860030F485 /* Track.swift */,
+				02E613EE1FFD7F860030F485 /* Bounds.swift */,
+				02E613EF1FFD7F860030F485 /* WayPoint.swift */,
+				02E613F01FFD7F860030F485 /* Person.swift */,
+				02E613F11FFD7F860030F485 /* Link.swift */,
+				02E613F21FFD7F860030F485 /* Copyright.swift */,
+				02E613F31FFD7F860030F485 /* Segment.swift */,
+				02E613F41FFD7F860030F485 /* GPSData.swift */,
+				02E613F51FFD7F860030F485 /* GPXExtension.swift */,
+				02E613F61FFD7F860030F485 /* Route.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		02ED612E1FE1CEA500384852 /* Test Files */ = {
+		02E6140C1FFD7FBC0030F485 /* Test Files */ = {
 			isa = PBXGroup;
 			children = (
-				02ED612C1FE1CE9C00384852 /* Orienteringsloop_Amerongse_Berg_9km.gpx */,
+				02E6140D1FFD7FBC0030F485 /* Orienteringsloop_Amerongse_Berg_9km.gpx */,
 			);
 			path = "Test Files";
 			sourceTree = "<group>";
@@ -277,62 +305,80 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		02ED61091FE1CBAE00384852 /* Headers */ = {
+		02E613C11FFD7EF60030F485 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02ED611E1FE1CBAF00384852 /* GPXKit.h in Headers */,
+				02E613D61FFD7EF70030F485 /* GPXKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		02ED60DF1FE1CB5E00384852 /* Orienteer */ = {
+		02E6138C1FFD7D790030F485 /* Orienteer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02ED61011FE1CB5E00384852 /* Build configuration list for PBXNativeTarget "Orienteer" */;
+			buildConfigurationList = 02E613B61FFD7D7A0030F485 /* Build configuration list for PBXNativeTarget "Orienteer" */;
 			buildPhases = (
-				02ED60DC1FE1CB5E00384852 /* Sources */,
-				02ED60DD1FE1CB5E00384852 /* Frameworks */,
-				02ED60DE1FE1CB5E00384852 /* Resources */,
-				02ED61261FE1CBAF00384852 /* Embed Frameworks */,
+				02E613891FFD7D790030F485 /* Sources */,
+				02E6138A1FFD7D790030F485 /* Frameworks */,
+				02E6138B1FFD7D790030F485 /* Resources */,
+				02E613E01FFD7EF70030F485 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				02ED61201FE1CBAF00384852 /* PBXTargetDependency */,
+				02E613D81FFD7EF70030F485 /* PBXTargetDependency */,
 			);
 			name = Orienteer;
 			productName = Orienteer;
-			productReference = 02ED60E01FE1CB5E00384852 /* Orienteer.app */;
+			productReference = 02E6138D1FFD7D790030F485 /* Orienteer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		02ED60F71FE1CB5E00384852 /* OrienteerTests */ = {
+		02E613A11FFD7D7A0030F485 /* OrienteerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02ED61041FE1CB5E00384852 /* Build configuration list for PBXNativeTarget "OrienteerTests" */;
+			buildConfigurationList = 02E613B91FFD7D7A0030F485 /* Build configuration list for PBXNativeTarget "OrienteerTests" */;
 			buildPhases = (
-				02ED60F41FE1CB5E00384852 /* Sources */,
-				02ED60F51FE1CB5E00384852 /* Frameworks */,
-				02ED60F61FE1CB5E00384852 /* Resources */,
+				02E6139E1FFD7D7A0030F485 /* Sources */,
+				02E6139F1FFD7D7A0030F485 /* Frameworks */,
+				02E613A01FFD7D7A0030F485 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				02ED60FA1FE1CB5E00384852 /* PBXTargetDependency */,
+				02E613A41FFD7D7A0030F485 /* PBXTargetDependency */,
 			);
 			name = OrienteerTests;
 			productName = OrienteerTests;
-			productReference = 02ED60F81FE1CB5E00384852 /* OrienteerTests.xctest */;
+			productReference = 02E613A21FFD7D7A0030F485 /* OrienteerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		02ED610B1FE1CBAE00384852 /* GPXKit */ = {
+		02E613AC1FFD7D7A0030F485 /* OrienteerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02ED61231FE1CBAF00384852 /* Build configuration list for PBXNativeTarget "GPXKit" */;
+			buildConfigurationList = 02E613BC1FFD7D7A0030F485 /* Build configuration list for PBXNativeTarget "OrienteerUITests" */;
 			buildPhases = (
-				02ED61071FE1CBAE00384852 /* Sources */,
-				02ED61081FE1CBAE00384852 /* Frameworks */,
-				02ED61091FE1CBAE00384852 /* Headers */,
-				02ED610A1FE1CBAE00384852 /* Resources */,
+				02E613A91FFD7D7A0030F485 /* Sources */,
+				02E613AA1FFD7D7A0030F485 /* Frameworks */,
+				02E613AB1FFD7D7A0030F485 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02E613AF1FFD7D7A0030F485 /* PBXTargetDependency */,
+			);
+			name = OrienteerUITests;
+			productName = OrienteerUITests;
+			productReference = 02E613AD1FFD7D7A0030F485 /* OrienteerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		02E613C31FFD7EF60030F485 /* GPXKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02E613DF1FFD7EF70030F485 /* Build configuration list for PBXNativeTarget "GPXKit" */;
+			buildPhases = (
+				02E613BF1FFD7EF60030F485 /* Sources */,
+				02E613C01FFD7EF60030F485 /* Frameworks */,
+				02E613C11FFD7EF60030F485 /* Headers */,
+				02E613C21FFD7EF60030F485 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -340,60 +386,65 @@
 			);
 			name = GPXKit;
 			productName = GPXKit;
-			productReference = 02ED610C1FE1CBAE00384852 /* GPXKit.framework */;
+			productReference = 02E613C41FFD7EF60030F485 /* GPXKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		02ED61131FE1CBAF00384852 /* GPXKitTests */ = {
+		02E613CB1FFD7EF60030F485 /* GPXKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02ED61271FE1CBAF00384852 /* Build configuration list for PBXNativeTarget "GPXKitTests" */;
+			buildConfigurationList = 02E613E11FFD7EF70030F485 /* Build configuration list for PBXNativeTarget "GPXKitTests" */;
 			buildPhases = (
-				02ED61101FE1CBAF00384852 /* Sources */,
-				02ED61111FE1CBAF00384852 /* Frameworks */,
-				02ED61121FE1CBAF00384852 /* Resources */,
+				02E613C81FFD7EF60030F485 /* Sources */,
+				02E613C91FFD7EF60030F485 /* Frameworks */,
+				02E613CA1FFD7EF60030F485 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				02ED61171FE1CBAF00384852 /* PBXTargetDependency */,
-				02ED61191FE1CBAF00384852 /* PBXTargetDependency */,
+				02E613CF1FFD7EF70030F485 /* PBXTargetDependency */,
+				02E613D11FFD7EF70030F485 /* PBXTargetDependency */,
 			);
 			name = GPXKitTests;
 			productName = GPXKitTests;
-			productReference = 02ED61141FE1CBAF00384852 /* GPXKitTests.xctest */;
+			productReference = 02E613CC1FFD7EF60030F485 /* GPXKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		02ED60D81FE1CB5E00384852 /* Project object */ = {
+		02E613851FFD7D790030F485 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = lapsedpacifist;
 				TargetAttributes = {
-					02ED60DF1FE1CB5E00384852 = {
-						CreatedOnToolsVersion = 9.0.1;
+					02E6138C1FFD7D790030F485 = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					02ED60F71FE1CB5E00384852 = {
-						CreatedOnToolsVersion = 9.0.1;
+					02E613A11FFD7D7A0030F485 = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 02ED60DF1FE1CB5E00384852;
+						TestTargetID = 02E6138C1FFD7D790030F485;
 					};
-					02ED610B1FE1CBAE00384852 = {
-						CreatedOnToolsVersion = 9.0.1;
-						LastSwiftMigration = 0900;
-						ProvisioningStyle = Manual;
-					};
-					02ED61131FE1CBAF00384852 = {
-						CreatedOnToolsVersion = 9.0.1;
+					02E613AC1FFD7D7A0030F485 = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 02ED60DF1FE1CB5E00384852;
+						TestTargetID = 02E6138C1FFD7D790030F485;
+					};
+					02E613C31FFD7EF60030F485 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					02E613CB1FFD7EF60030F485 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 02E6138C1FFD7D790030F485;
 					};
 				};
 			};
-			buildConfigurationList = 02ED60DB1FE1CB5E00384852 /* Build configuration list for PBXProject "Orienteer" */;
+			buildConfigurationList = 02E613881FFD7D790030F485 /* Build configuration list for PBXProject "Orienteer" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -401,152 +452,153 @@
 				en,
 				Base,
 			);
-			mainGroup = 02ED60D71FE1CB5E00384852;
-			productRefGroup = 02ED60E11FE1CB5E00384852 /* Products */;
+			mainGroup = 02E613841FFD7D790030F485;
+			productRefGroup = 02E6138E1FFD7D790030F485 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				02ED60DF1FE1CB5E00384852 /* Orienteer */,
-				02ED60F71FE1CB5E00384852 /* OrienteerTests */,
-				02ED610B1FE1CBAE00384852 /* GPXKit */,
-				02ED61131FE1CBAF00384852 /* GPXKitTests */,
+				02E6138C1FFD7D790030F485 /* Orienteer */,
+				02E613A11FFD7D7A0030F485 /* OrienteerTests */,
+				02E613AC1FFD7D7A0030F485 /* OrienteerUITests */,
+				02E613C31FFD7EF60030F485 /* GPXKit */,
+				02E613CB1FFD7EF60030F485 /* GPXKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		02ED60DE1FE1CB5E00384852 /* Resources */ = {
+		02E6138B1FFD7D790030F485 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02ED60EE1FE1CB5E00384852 /* Assets.xcassets in Resources */,
-				02ED60E91FE1CB5E00384852 /* Document.xib in Resources */,
-				02ED60F11FE1CB5E00384852 /* MainMenu.xib in Resources */,
+				02E614111FFD81580030F485 /* Document.xib in Resources */,
+				02E613981FFD7D790030F485 /* Assets.xcassets in Resources */,
+				02E614131FFD819B0030F485 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02ED60F61FE1CB5E00384852 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		02ED610A1FE1CBAE00384852 /* Resources */ = {
+		02E613A01FFD7D7A0030F485 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02ED61121FE1CBAF00384852 /* Resources */ = {
+		02E613AB1FFD7D7A0030F485 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02ED612D1FE1CE9C00384852 /* Orienteringsloop_Amerongse_Berg_9km.gpx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E613C21FFD7EF60030F485 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E613CA1FFD7EF60030F485 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E6140E1FFD7FBC0030F485 /* Orienteringsloop_Amerongse_Berg_9km.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		02ED60DC1FE1CB5E00384852 /* Sources */ = {
+		02E613891FFD7D790030F485 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02ED60EC1FE1CB5E00384852 /* Document.xcdatamodeld in Sources */,
-				02ED60E61FE1CB5E00384852 /* Document.swift in Sources */,
-				02ED60E41FE1CB5E00384852 /* AppDelegate.swift in Sources */,
+				02E613931FFD7D790030F485 /* Document.swift in Sources */,
+				02E613911FFD7D790030F485 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02ED60F41FE1CB5E00384852 /* Sources */ = {
+		02E6139E1FFD7D7A0030F485 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02ED60FD1FE1CB5E00384852 /* OrienteerTests.swift in Sources */,
+				02E613A71FFD7D7A0030F485 /* OrienteerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02ED61071FE1CBAE00384852 /* Sources */ = {
+		02E613A91FFD7D7A0030F485 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0224F8B51FE27CAE006E8C95 /* GPSData.swift in Sources */,
-				02E613831FE6FCFD0030F485 /* GarminTrackPointExtensionParser.swift in Sources */,
-				02ED61301FE1CEF500384852 /* Track.swift in Sources */,
-				0224F8BD1FE3083A006E8C95 /* Metadata.swift in Sources */,
-				0224F8C51FE31010006E8C95 /* GPXExtension.swift in Sources */,
-				02E6137E1FE6FA210030F485 /* GPXElement.swift in Sources */,
-				0224F8BF1FE308CC006E8C95 /* Person.swift in Sources */,
-				02ED61321FE1D14500384852 /* Segment.swift in Sources */,
-				02E613811FE6FCB60030F485 /* GarminTrackPointExtension.swift in Sources */,
-				0224F8C81FE48578006E8C95 /* GPXParser.swift in Sources */,
-				0224F8CC1FE49338006E8C95 /* GPXExtensionParser.swift in Sources */,
-				0224F8B91FE281EF006E8C95 /* Link.swift in Sources */,
-				0224F8B71FE27E20006E8C95 /* Route.swift in Sources */,
-				0224F8CA1FE4865A006E8C95 /* GPXParserDelegate.swift in Sources */,
-				0224F8C11FE30A39006E8C95 /* Copyright.swift in Sources */,
-				0224F8BB1FE2838F006E8C95 /* FixType.swift in Sources */,
-				0224F8C31FE30BF2006E8C95 /* Bounds.swift in Sources */,
-				02ED61341FE1D1BB00384852 /* WayPoint.swift in Sources */,
+				02E613B21FFD7D7A0030F485 /* OrienteerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02ED61101FE1CBAF00384852 /* Sources */ = {
+		02E613BF1FFD7EF60030F485 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02ED611C1FE1CBAF00384852 /* GPXKitTests.swift in Sources */,
+				02E613FD1FFD7F860030F485 /* Metadata.swift in Sources */,
+				02E614051FFD7F860030F485 /* Segment.swift in Sources */,
+				02E613FE1FFD7F860030F485 /* FixType.swift in Sources */,
+				02E613FA1FFD7F860030F485 /* GPXElement.swift in Sources */,
+				02E613F71FFD7F860030F485 /* GPXParser.swift in Sources */,
+				02E613F91FFD7F860030F485 /* GPXExtensionParser.swift in Sources */,
+				02E614031FFD7F860030F485 /* Link.swift in Sources */,
+				02E614071FFD7F860030F485 /* GPXExtension.swift in Sources */,
+				02E613FF1FFD7F860030F485 /* Track.swift in Sources */,
+				02E614081FFD7F860030F485 /* Route.swift in Sources */,
+				02E614021FFD7F860030F485 /* Person.swift in Sources */,
+				02E614001FFD7F860030F485 /* Bounds.swift in Sources */,
+				02E613F81FFD7F860030F485 /* GPXParserDelegate.swift in Sources */,
+				02E614011FFD7F860030F485 /* WayPoint.swift in Sources */,
+				02E614061FFD7F860030F485 /* GPSData.swift in Sources */,
+				02E614041FFD7F860030F485 /* Copyright.swift in Sources */,
+				02E613FC1FFD7F860030F485 /* GarminTrackPointExtension.swift in Sources */,
+				02E613FB1FFD7F860030F485 /* GarminTrackPointExtensionParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E613C81FFD7EF60030F485 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E6140B1FFD7FB00030F485 /* GPXKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		02ED60FA1FE1CB5E00384852 /* PBXTargetDependency */ = {
+		02E613A41FFD7D7A0030F485 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 02ED60DF1FE1CB5E00384852 /* Orienteer */;
-			targetProxy = 02ED60F91FE1CB5E00384852 /* PBXContainerItemProxy */;
+			target = 02E6138C1FFD7D790030F485 /* Orienteer */;
+			targetProxy = 02E613A31FFD7D7A0030F485 /* PBXContainerItemProxy */;
 		};
-		02ED61171FE1CBAF00384852 /* PBXTargetDependency */ = {
+		02E613AF1FFD7D7A0030F485 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 02ED610B1FE1CBAE00384852 /* GPXKit */;
-			targetProxy = 02ED61161FE1CBAF00384852 /* PBXContainerItemProxy */;
+			target = 02E6138C1FFD7D790030F485 /* Orienteer */;
+			targetProxy = 02E613AE1FFD7D7A0030F485 /* PBXContainerItemProxy */;
 		};
-		02ED61191FE1CBAF00384852 /* PBXTargetDependency */ = {
+		02E613CF1FFD7EF70030F485 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 02ED60DF1FE1CB5E00384852 /* Orienteer */;
-			targetProxy = 02ED61181FE1CBAF00384852 /* PBXContainerItemProxy */;
+			target = 02E613C31FFD7EF60030F485 /* GPXKit */;
+			targetProxy = 02E613CE1FFD7EF70030F485 /* PBXContainerItemProxy */;
 		};
-		02ED61201FE1CBAF00384852 /* PBXTargetDependency */ = {
+		02E613D11FFD7EF70030F485 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 02ED610B1FE1CBAE00384852 /* GPXKit */;
-			targetProxy = 02ED611F1FE1CBAF00384852 /* PBXContainerItemProxy */;
+			target = 02E6138C1FFD7D790030F485 /* Orienteer */;
+			targetProxy = 02E613D01FFD7EF70030F485 /* PBXContainerItemProxy */;
+		};
+		02E613D81FFD7EF70030F485 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02E613C31FFD7EF60030F485 /* GPXKit */;
+			targetProxy = 02E613D71FFD7EF70030F485 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		02ED60E71FE1CB5E00384852 /* Document.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				02ED60E81FE1CB5E00384852 /* Base */,
-			);
-			name = Document.xib;
-			sourceTree = "<group>";
-		};
-		02ED60EF1FE1CB5E00384852 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				02ED60F01FE1CB5E00384852 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		02ED60FF1FE1CB5E00384852 /* Debug */ = {
+		02E613B41FFD7D7A0030F485 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -603,7 +655,7 @@
 			};
 			name = Debug;
 		};
-		02ED61001FE1CB5E00384852 /* Release */ = {
+		02E613B51FFD7D7A0030F485 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -652,7 +704,7 @@
 			};
 			name = Release;
 		};
-		02ED61021FE1CB5E00384852 /* Debug */ = {
+		02E613B71FFD7D7A0030F485 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -669,7 +721,7 @@
 			};
 			name = Debug;
 		};
-		02ED61031FE1CB5E00384852 /* Release */ = {
+		02E613B81FFD7D7A0030F485 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -686,7 +738,7 @@
 			};
 			name = Release;
 		};
-		02ED61051FE1CB5E00384852 /* Debug */ = {
+		02E613BA1FFD7D7A0030F485 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -703,7 +755,7 @@
 			};
 			name = Debug;
 		};
-		02ED61061FE1CB5E00384852 /* Release */ = {
+		02E613BB1FFD7D7A0030F485 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -720,16 +772,47 @@
 			};
 			name = Release;
 		};
-		02ED61241FE1CBAF00384852 /* Debug */ = {
+		02E613BD1FFD7D7A0030F485 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J2S9726G2L;
+				INFOPLIST_FILE = OrienteerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lapsedpacifist.OrienteerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Orienteer;
+			};
+			name = Debug;
+		};
+		02E613BE1FFD7D7A0030F485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J2S9726G2L;
+				INFOPLIST_FILE = OrienteerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lapsedpacifist.OrienteerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Orienteer;
+			};
+			name = Release;
+		};
+		02E613DB1FFD7EF70030F485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = J2S9726G2L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -739,62 +822,62 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lapsedpacifist.GPXKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		02E613DC1FFD7EF70030F485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J2S9726G2L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = GPXKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lapsedpacifist.GPXKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		02E613DD1FFD7EF70030F485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J2S9726G2L;
+				INFOPLIST_FILE = GPXKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lapsedpacifist.GPXKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GPXKitTests/GPXKitTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		02ED61251FE1CBAF00384852 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = GPXKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lapsedpacifist.GPXKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		02ED61281FE1CBAF00384852 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = J2S9726G2L;
-				INFOPLIST_FILE = GPXKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lapsedpacifist.GPXKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orienteer.app/Contents/MacOS/Orienteer";
 			};
 			name = Debug;
 		};
-		02ED61291FE1CBAF00384852 /* Release */ = {
+		02E613DE1FFD7EF70030F485 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = J2S9726G2L;
@@ -802,6 +885,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lapsedpacifist.GPXKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GPXKitTests/GPXKitTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orienteer.app/Contents/MacOS/Orienteer";
 			};
@@ -810,65 +894,61 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02ED60DB1FE1CB5E00384852 /* Build configuration list for PBXProject "Orienteer" */ = {
+		02E613881FFD7D790030F485 /* Build configuration list for PBXProject "Orienteer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02ED60FF1FE1CB5E00384852 /* Debug */,
-				02ED61001FE1CB5E00384852 /* Release */,
+				02E613B41FFD7D7A0030F485 /* Debug */,
+				02E613B51FFD7D7A0030F485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02ED61011FE1CB5E00384852 /* Build configuration list for PBXNativeTarget "Orienteer" */ = {
+		02E613B61FFD7D7A0030F485 /* Build configuration list for PBXNativeTarget "Orienteer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02ED61021FE1CB5E00384852 /* Debug */,
-				02ED61031FE1CB5E00384852 /* Release */,
+				02E613B71FFD7D7A0030F485 /* Debug */,
+				02E613B81FFD7D7A0030F485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02ED61041FE1CB5E00384852 /* Build configuration list for PBXNativeTarget "OrienteerTests" */ = {
+		02E613B91FFD7D7A0030F485 /* Build configuration list for PBXNativeTarget "OrienteerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02ED61051FE1CB5E00384852 /* Debug */,
-				02ED61061FE1CB5E00384852 /* Release */,
+				02E613BA1FFD7D7A0030F485 /* Debug */,
+				02E613BB1FFD7D7A0030F485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02ED61231FE1CBAF00384852 /* Build configuration list for PBXNativeTarget "GPXKit" */ = {
+		02E613BC1FFD7D7A0030F485 /* Build configuration list for PBXNativeTarget "OrienteerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02ED61241FE1CBAF00384852 /* Debug */,
-				02ED61251FE1CBAF00384852 /* Release */,
+				02E613BD1FFD7D7A0030F485 /* Debug */,
+				02E613BE1FFD7D7A0030F485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02ED61271FE1CBAF00384852 /* Build configuration list for PBXNativeTarget "GPXKitTests" */ = {
+		02E613DF1FFD7EF70030F485 /* Build configuration list for PBXNativeTarget "GPXKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02ED61281FE1CBAF00384852 /* Debug */,
-				02ED61291FE1CBAF00384852 /* Release */,
+				02E613DB1FFD7EF70030F485 /* Debug */,
+				02E613DC1FFD7EF70030F485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02E613E11FFD7EF70030F485 /* Build configuration list for PBXNativeTarget "GPXKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E613DD1FFD7EF70030F485 /* Debug */,
+				02E613DE1FFD7EF70030F485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		02ED60EA1FE1CB5E00384852 /* Document.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				02ED60EB1FE1CB5E00384852 /* Document.xcdatamodel */,
-			);
-			currentVersion = 02ED60EB1FE1CB5E00384852 /* Document.xcdatamodel */;
-			path = Document.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 02ED60D81FE1CB5E00384852 /* Project object */;
+	rootObject = 02E613851FFD7D790030F485 /* Project object */;
 }

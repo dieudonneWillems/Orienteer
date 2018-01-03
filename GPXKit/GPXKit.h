@@ -2,8 +2,8 @@
 //  GPXKit.h
 //  GPXKit
 //
-//  Created by Don Willems on 13/12/2017.
-//  Copyright © 2017 lapsedpacifist. All rights reserved.
+//  Created by Don Willems on 03/01/2018.
+//  Copyright © 2018 lapsedpacifist. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
@@ -15,4 +15,5 @@ FOUNDATION_EXPORT double GPXKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char GPXKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <GPXKit/PublicHeader.h>
+
 
